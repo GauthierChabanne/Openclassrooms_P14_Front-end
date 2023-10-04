@@ -1,0 +1,52 @@
+.error-main {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin-top: 10rem;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+}
+
+.error-link {
+  cursor: pointer;
+
+}
+
+.error-link:hover {
+  text-decoration-line: underline;
+}
+
+.error-btn {
+  width: 15rem;
+  padding: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  border-color: #00bc77;
+  background-color: #00bc77;
+  color: #fff;
+}
+
+@media (min-width: 720px) {
+  .error-main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .error-btn {
+    width: 20rem;
+  }
+
+  .error-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 920px) {}
