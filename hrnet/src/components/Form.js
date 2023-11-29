@@ -6,7 +6,7 @@ import { Departments } from "../database/Departments";
 import { useDispatch } from "react-redux";
 import { addEmployee } from "../outils/employeesSlice";
 import { nanoid } from "@reduxjs/toolkit";
-import { Modal } from "oc_14_modal_gauthier";
+import { Modal } from "oc-modal-gauthier";
 
 function Form() {
   const [firstName, setFirstName] = useState("");
