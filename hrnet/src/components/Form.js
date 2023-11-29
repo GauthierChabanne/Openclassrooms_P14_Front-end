@@ -6,6 +6,7 @@ import { Departments } from "../database/Departments";
 import { useDispatch } from "react-redux";
 import { addEmployee } from "../outils/employeesSlice";
 import { nanoid } from "@reduxjs/toolkit";
+import { Modal } from "oc_14_modal_gauthier";
 
 function Form() {
   const [firstName, setFirstName] = useState("");
@@ -212,6 +213,7 @@ function Form() {
           </button>
         </div>
       </form>
+       <Modal open={modal} onClose={toggleModal} />
     </div>
   );
 };
