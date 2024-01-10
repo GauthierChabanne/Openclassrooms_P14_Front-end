@@ -2,6 +2,15 @@ import React from 'react';
 import '../styles/Error.css';
 import { NavLink } from 'react-router-dom';
 
+/**
+ * The page showing when a wrong url is entered.
+ * @component
+ * @example
+ * return (
+ *  <Error />
+ * )
+ */
+
  export default function Error(){
 
     return(

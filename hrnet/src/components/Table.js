@@ -12,6 +12,15 @@ import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import Filter from "./Filter";
 import "../styles/Table.css"
 
+/**
+ * The table used to show all employees.
+ * @component
+ * @example
+ * return (
+ *  <Table />
+ * )
+ */
+
 function Table() {
   const allEmployee = useSelector((state) => state.employees.allEmployees);
 

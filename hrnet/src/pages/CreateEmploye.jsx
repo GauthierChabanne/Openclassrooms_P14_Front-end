@@ -3,12 +3,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Form from "../components/Form";
 
+/**
+ * The page allowing to create an Employee.
+ * @component
+ * @example
+ * return (
+ *  <CreateEmploye />
+ * )
+ */
+
 function CreateEmploye() {
   return(
-    <div>
-      <div className="w-full h-[80px] bg-gray-800 text-slate-100 flex justify-center items-center">
+    <div className="container">
+      <div className="form-header">
         <h1>HRnet</h1>
-        <div className="border-solid border-2 border-stone-300">
+        <div className="">
           <Link to="/employelist" className="cursor-pointer ">
             --View Current Employees--
           </Link>

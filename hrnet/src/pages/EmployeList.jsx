@@ -3,6 +3,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Table from "../components/Table";
 
+/**
+ * The form used to show all employees.
+ * @component
+ * @example
+ * return (
+ *  <EmployeList />
+ * )
+ */
+
 function EmployeList() {
 
   return (

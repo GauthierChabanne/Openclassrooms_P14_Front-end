@@ -1,5 +1,9 @@
 import { format, formatISO } from "date-fns";
 
+/**
+ * The columns that will be used for the table
+ */
+
 export const AllColumns = [
   {
     Header: "ID",

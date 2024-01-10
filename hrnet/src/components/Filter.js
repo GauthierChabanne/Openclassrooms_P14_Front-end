@@ -1,6 +1,12 @@
 import React from "react";
 import "../styles/Filter.css"
 
+/**
+ * The filter used for the table search.
+ * @component
+ */
+
+
 function Filter({ filter, setFilter }) {
   return (
     <div className="table-filter">
