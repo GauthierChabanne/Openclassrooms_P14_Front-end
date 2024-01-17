@@ -108,11 +108,10 @@ function Table() {
           {page.map((row) => {
             prepareRow(row);
             return (
-              <tr className="even:bg-gray-100" {...row.getRowProps()}>
+              <tr {...row.getRowProps()}>
                 {row.cells.map((cell) => {
                   return (
                     <td
-                      className="text-lg p-4 border-2"
                       {...cell.getCellProps()}
                     >
                       {cell.render("Cell")}
@@ -124,9 +123,8 @@ function Table() {
           })}
         </tbody>
       </table>
-      <div className="flex justify-center items-center mt-3">
+      <div>
         <button
-          className="mr-3 inline-block px-8 py-3 text-sm font-medium text-white bg-[#111827] border border-[#111827] rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring"
           onClick={() => previousPage()}
           disabled={!canPreviousPage}
         >
@@ -139,7 +137,6 @@ function Table() {
           </strong>{" "}
         </span>
         <button
-          className="ml-3 inline-block px-8 py-3 text-sm font-medium text-white bg-[#111827] border border-[#111827] rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring"
           onClick={() => nextPage()}
           disabled={!canNextPage}
         >
